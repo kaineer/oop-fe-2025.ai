@@ -128,6 +128,12 @@ function compose(f, g) {
 
 ### Задача 7: Получение свойства name
 ```javascript
+// Основной вариант с деструктуризацией:
+function getName({ name }) {
+    return name;
+}
+
+// Альтернативный вариант:
 function getName(obj) {
     return obj.name;
 }

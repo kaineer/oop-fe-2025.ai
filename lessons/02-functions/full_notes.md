@@ -317,19 +317,19 @@ console.log(doubleThenAddFive(3)); // выведет: 11 (3*2=6, 6+5=11)
 
 **Пошаговое решение:**
 1. Объявляем функцию `getName`
-2. Определяем параметр `obj`
-3. Возвращаем значение свойства `name` объекта
+2. Используем деструктуризацию для извлечения свойства `name` из параметра
+3. Возвращаем значение `name`
 
-```javascript
-function getName(obj) {
-    return obj.name;
-}
-```
-
-**Альтернативное решение с деструктуризацией:**
 ```javascript
 function getName({ name }) {
     return name;
+}
+```
+
+**Альтернативное решение без деструктуризации:**
+```javascript
+function getName(obj) {
+    return obj.name;
 }
 ```
 
