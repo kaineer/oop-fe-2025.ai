@@ -1,0 +1,33 @@
+lesson:
+  number: 5
+  title: "Объектная модель браузера"
+  topic: "Поиск и модификация элементов страницы"
+  duration: 90
+
+key_concepts:
+  - "Meтоды window, document, navigator"
+  - "Meтоды querySelector, querySelectorAll"
+  - "Meтоды children, parentElement"
+  - "Meтоды closest"
+  - "Meтоды className, classList, dataset"
+  - "Meтоды append, remove"
+
+fun_facts:
+  - "jQuery собирается выпустить 4ю версию, давненько я ее не использовал"
+
+learning_objectives:
+  - "Уметь получать доступ к элементам страницы"
+  - "Уметь изменять стили элементов страницы"
+  - "Уметь добавлять и удалять элементы на странице"
+
+code_examples:
+  - "Получение доступа к элементу по id, классу и тегу"
+  - "Все то же самое, но исключительно через querySelector"
+  - "Изменение класса элемента"
+  - "Изменение стиля элемента"
+  - "Удаление элемента со страницы (при помощи remove() и по старинке, через parentNode.removeChild(self))"
+
+practice_exercises:
+  - "Получаем ссылку на элемент в списке"
+  - "Получаем ссылку на все элементы списка"
+  - "Получаем ссылку на tr если есть ссылка на td"
