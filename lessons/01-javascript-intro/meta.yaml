@@ -21,27 +21,9 @@ learning_objectives:
   - "Уметь использовать операторы сравнения и логические операторы"
 
 practice_exercises:
-  - "Задача 1: Объявление переменных"
+  - name: "Объявление переменных"
     description: "Объявите переменную `name` и присвойте ей значение 'Василий'."
-    code: |
-      let name = 'Василий';
-    solution: |
-      let name = 'Василий';
-    tests:
-      - "name === 'Василий'"
-  - "Задача 2: Сложение чисел"
+  - name: "Сложение чисел"
     description: "Сложите числа 5 и 3 и присвойте результат переменной `result`."
-    code: |
-      let result = 5 + 3;
-    solution: |
-      let result = 5 + 3;
-    tests:
-      - "result === 8"
-  - "Задача 3: Сравнение строк"
+  - name: "Сравнение строк"
     description: "Сравните строки 'apple' и 'banana' и присвойте результат переменной `comparison`."
-    code: |
-      let comparison = 'apple' === 'banana';
-    solution: |
-      let comparison = 'apple' === 'banana';
-    tests:
-      - "comparison === false"
