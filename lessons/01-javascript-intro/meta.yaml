@@ -3,6 +3,7 @@ lesson:
   title: "Типы данных в JavaScript"
   topic: "Основные типы данных, с которыми мы будем работать"
   duration: 90
+  type: "theory"
 
 key_concepts:
   - "Ключевые слова для обьявления переменных"

@@ -3,6 +3,7 @@ lesson:
   title: "Массивы и работа с ними в JavaScript"
   topic: "Массивы, создание, методы"
   duration: 90
+  type: "theory"
 
 key_concepts:
   - "Использование forEach, map, filter, reduce"
