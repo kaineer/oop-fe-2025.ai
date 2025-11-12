@@ -240,7 +240,12 @@ console.log(weekDays[6]); // "воскресенье"
 const weekends = weekDays.filter(day => day === 'суббота' || day === 'воскресенье');
 ```
 
-**Альтернативное решение:**
+**Альтернативное решение с slice:**
+```javascript
+const weekends = weekDays.slice(5); // выходные всегда последние два дня
+```
+
+**Альтернативное решение с includes:**
 ```javascript
 const weekends = weekDays.filter(day => ['суббота', 'воскресенье'].includes(day));
 ```
@@ -249,6 +254,11 @@ const weekends = weekDays.filter(day => ['суббота', 'воскресень
 ```javascript
 console.log(weekends); // ['суббота', 'воскресенье']
 console.log(weekends.length); // 2
+
+// Проверка для slice решения:
+const weekendsSlice = weekDays.slice(5);
+console.log(weekendsSlice); // ['суббота', 'воскресенье']
+console.log(weekendsSlice.length); // 2
 ```
 
 ### Задача 4: Выбрать только рабочие дни недели
@@ -261,7 +271,12 @@ console.log(weekends.length); // 2
 const workDays = weekDays.filter(day => day !== 'суббота' && day !== 'воскресенье');
 ```
 
-**Альтернативное решение:**
+**Альтернативное решение с slice:**
+```javascript
+const workDays = weekDays.slice(0, 5); // рабочие дни всегда первые пять
+```
+
+**Альтернативное решение с includes:**
 ```javascript
 const workDays = weekDays.filter(day => !['суббота', 'воскресенье'].includes(day));
 ```
@@ -270,6 +285,11 @@ const workDays = weekDays.filter(day => !['суббота', 'воскресен�
 ```javascript
 console.log(workDays); // ['понедельник', 'вторник', 'среда', 'четверг', 'пятница']
 console.log(workDays.length); // 5
+
+// Проверка для slice решения:
+const workDaysSlice = weekDays.slice(0, 5);
+console.log(workDaysSlice); // ['понедельник', 'вторник', 'среда', 'четверг', 'пятница']
+console.log(workDaysSlice.length); // 5
 ```
 
 ### Задача 5: Для массива от 1 до 10 получить массив квадратов чисел
