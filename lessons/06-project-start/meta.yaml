@@ -1,0 +1,45 @@
+lesson:
+  number: 6
+  title: "Создаем проект, добавляем объекты, выводим список на страницу"
+  topic: "Создание проекта, первые объекты, отображение списка"
+  duration: 90
+  type: "practice"
+
+project:
+  name: "crossword"
+  description: "Редактирование и заполнение кроссворда"
+  steps:
+    - name: "Создание проекта"
+      path: "src/step00"
+      commands: |
+        npm create
+        # Дальше выбираем Vanilla, JavaScript
+        npm install
+        npm run dev
+      actions:
+        - name: "Меняем заголовок документа"
+          ref: "index.html"
+        - name: "Удаляем лишние файлы"
+          ref: ["public/", "src/"]
+        - name: "Убираем лишний код из main.js"
+          ref: "main.js"
+        - name: "Убираем стили из style.css"
+          ref: "style.css"
+    - name: "Добавление объектов для поддержки списка используемых слов"
+      path: "src/step01"
+      actions:
+        - name: "Добавляем файл src/word.js"
+          ref: "word.js"
+        - name: "Добавляем файл src/word-list.js"
+          ref: "word-list.js"
+    - name: "Отрисовываем список используемых слов"
+      path: "src/step02"
+      actions:
+        - name: "Добавляем файл src/renderers.js"
+          ref: "renderers.js"
+        - name: "В файле добавляем функцию renderWord"
+          ref: "renderers.js@renderWord"
+        - name: "В файле добавляем функцию renderWordList"
+          ref: "renderers.js@renderWordList"
+        - name: "Добавляем отрисовку списка слов"
+          ref: ["main.js@import", "main.js@render"]
