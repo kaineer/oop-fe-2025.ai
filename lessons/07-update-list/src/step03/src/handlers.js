@@ -1,5 +1,5 @@
 // REF: declare
-export const attachHandlers = (container, { wordList }) => {
+export const attachHandlers = (container, { wordList, renderWordList }) => {
   // ENDREF
   if (container) {
     // REF: remove-button
@@ -10,6 +10,7 @@ export const attachHandlers = (container, { wordList }) => {
         const nameCell = row.querySelector("td");
         const word = nameCell.textContent;
         wordList.removeWord(word);
+        container.innerHTML = renderWordList(wordList);
       }
     });
     // ENDREF

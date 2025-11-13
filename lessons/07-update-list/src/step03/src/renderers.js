@@ -11,7 +11,7 @@ export const renderWord = (word) => {
     .replace("%description", word.description);
 };
 
-export const renderWordList = (words) => {
-  const rows = words.map(renderWord).join("");
+export const renderWordList = (wordList) => {
+  const rows = wordList.words.map(renderWord).join("");
   return wordListTemplate.replace("%rows", rows);
 };

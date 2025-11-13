@@ -46,7 +46,7 @@ project:
             - name: "Описываем обработчик для кнопок удаления"
               ref: "handlers.js@remove-button"
             - name: "Импортируем attachHandlers в main.js и скармливаем ему #word-list"
-              ref: ["main.js@import", "main.js@attach"]
+              ref: ["main.js@import", "main.js@word-list-el"]
       expected:
         - "Обработчик должен быть назначен не на каждый крестик, а на весь список, идеально - на контейнер #word-list"
         - "При клике на кнопку удаления слово должно удаляться из списка"

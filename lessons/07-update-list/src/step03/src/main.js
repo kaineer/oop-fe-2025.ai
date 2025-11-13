@@ -24,5 +24,5 @@ wordList.addWord("алгоритм", "последовательность ша�
 // REF: word-list-el
 const wordListEl = document.querySelector("#word-list");
 wordListEl.innerHTML = renderWordList(wordList);
-attachHandlers(wordListEl, { wordList });
+attachHandlers(wordListEl, { wordList, renderWordList });
 // ENDREF
