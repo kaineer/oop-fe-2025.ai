@@ -55,8 +55,7 @@ project:
       path: "src/step04"
       actions:
         - name: "Добавляем HTML-форму в html-код в main.js"
-          ref:
-            - "main.js@form"
+          ref: "main.js@word-form"
       expected:
         - "В интерфейсе должна появиться форма с полями для слова и описания"
         - "Форма должна содержать кнопку для добавления/обновления слова"
