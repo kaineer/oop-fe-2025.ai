@@ -1,5 +1,6 @@
-// REF: import
 import { renderWordList } from "./renderers.js";
+// REF: import
+import { attachHandlers } from "./handlers.js";
 import "./style.css";
 
 import { WordList } from "./word-list.js";
@@ -20,5 +21,8 @@ wordList.addWord(
 wordList.addWord("функция", "блок кода, выполняющий определенную задачу");
 wordList.addWord("алгоритм", "последовательность шагов для решения задачи");
 
-// REF: render
-document.querySelector("#word-list").innerHTML = renderWordList(wordList);
+// REF: word-list-el
+const wordListEl = document.querySelector("#word-list");
+wordListEl.innerHTML = renderWordList(wordList);
+attachHandlers(wordListEl, { wordList });
+// ENDREF
