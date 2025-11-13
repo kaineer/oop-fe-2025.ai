@@ -1,6 +1,7 @@
 roles:
   lesson_guide:
     name: "Краткий конспект"
+    lesson_types: ["theory"]
     audience: "Преподаватель"
     purpose: "Структура и ключевые моменты для ведения занятий"
     content:
@@ -13,6 +14,7 @@ roles:
 
   full_notes:
     name: "Полный конспект"
+    lesson_types: ["theory"]
     audience: "Студенты (пропустившие занятие)"
     purpose: "Полное объяснение темы для тех, кто не смог прийти"
     content:
@@ -24,6 +26,7 @@ roles:
 
   detailed_plan:
     name: "Детальный план занятия"
+    lesson_types: ["theory", "practice"]
     audience: "Преподаватель/методист"
     purpose: "Описание пройденных тем с почасовкой"
     content:
@@ -33,3 +36,27 @@ roles:
       - "Критерии оценки"
     tone: "Доступный, подробный"
     file_name: "detailed_plan.md"
+
+  task_description:
+    name: "Описание задачи"
+    lesson_types: ["practice"]
+    audience: "Студенты"
+    purpose: "Подробное описание задачи для выполнения"
+    content:
+      - "Описание задачи"
+      - "Требования к решению"
+      - "Элементы языка, которые желательно использовать"
+    tone: "Доступный, подробный"
+    file_name: "task_description.md"
+
+  project_steps:
+    name: "Шаги проекта"
+    lesson_types: ["practice"]
+    audience: "Преподаватель"
+    purpose: "Описание шагов проекта для выполнения на уроке"
+    tone: "Кратко, общие детали"
+    content:
+      - "Цели каждого шага"
+      - "Описание каждого шага"
+      - "Ожидаемый результат каждого шага"
+    file_name: "project_steps.md"
