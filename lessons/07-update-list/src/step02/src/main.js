@@ -1,4 +1,3 @@
-// REF: import
 import { renderWordList } from "./renderers.js";
 import "./style.css";
 
@@ -20,5 +19,4 @@ wordList.addWord(
 wordList.addWord("функция", "блок кода, выполняющий определенную задачу");
 wordList.addWord("алгоритм", "последовательность шагов для решения задачи");
 
-// REF: render
 document.querySelector("#word-list").innerHTML = renderWordList(wordList);
